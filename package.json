@@ -1,0 +1,20 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "seed": "node prisma/seed.js",
+    "migrate": "yarn prisma migrate dev",
+    "reset": "yarn prisma migrate reset"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.2.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "prisma": "^3.2.1"
+  }
+}
